@@ -1,2 +1,2 @@
 # SimonSays
-Minigame for pocketmine
+# IN DEV
