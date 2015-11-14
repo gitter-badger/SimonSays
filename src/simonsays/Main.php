@@ -14,12 +14,16 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase implements Listener {
- public function onEnable() {
-  $this->getLogger()->info("SimonSays enabled");
-  }
-  
- public function onDisable() {
-  $this->getLogger()->info("SimonSays disabled");
-  }
+class Main extends PluginBase implements Listener
+{
+    public function onEnable()
+    {
+        $this->getLogger()->info("SimonSays enabled");
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
+
+    public function onDisable()
+    {
+        $this->getLogger()->info("SimonSays disabled");
+    }
 }
