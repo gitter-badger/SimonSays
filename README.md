@@ -1,0 +1,2 @@
+# SimonSays
+Minigame for pocketmine
